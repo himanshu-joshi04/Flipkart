@@ -3,16 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.ProductSearch">
+      <class name="tests.ProductsPage">
         <methods>
-          <include name="searchInvalidProduct"/>
-          <include name="searchPartialProduct"/>
-          <include name="searchEmptyProduct"/>
+          <include name="verifyFilters"/>
+          <include name="verifyProductsDisplayed"/>
           <include name="setup"/>
-          <include name="searchValidProduct"/>
-          <include name="teardown"/>
+          <include name="tearDown"/>
+          <include name="verifySearch"/>
+          <include name="verifyProductNavigation"/>
+          <include name="verifyAddToCart"/>
+          <include name="verifySortingLowToHigh"/>
         </methods>
-      </class> <!-- tests.ProductSearch -->
+      </class> <!-- tests.ProductsPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
